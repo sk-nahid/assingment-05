@@ -34,7 +34,7 @@ function setTextById(id, id2, id3, id4) {
     //history
     const title = document.getElementById(id4).innerText;
     const history = document.createElement("p");
-    history.innerText = `you have completed the task ${title} at ${amPm};
+    history.innerText = `you have completed the task ${title} at ${amPm}.
     `;
     document.getElementById("history-log").appendChild(history);
     return sum;
@@ -49,7 +49,7 @@ setTextById("main-task", "btn-complate-6", "completed-task", "title-6");
 
 
 document.getElementById("clear-history").addEventListener('click',function(event){
-  const view = document.getElementById("history-log")
+  const view = document.getElementById("history-log");
   view.innerHTML = "";
   // view.classList.add("clear");
 })

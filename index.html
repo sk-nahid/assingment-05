@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html class="bg-red-300" lang="en">
+<html lang="en">
 
-<head>
+<head >
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev Board</title>
@@ -11,6 +11,7 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
         <style>
+            
             #history-log > p{
                 font-size: 20px;
                 padding:10px ;
@@ -22,6 +23,12 @@
             .clear{
                 display: none;
             }
+            #date p{
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            
         </style>
 </head>
 
@@ -37,7 +44,7 @@
                     <i class="fa-solid fa-square-check text-2xl text-blue-500"></i>
                     <p id="completed-task" class="font-bold text-2xl ">23</p>
                 </div>
-                <img src="assets/theme-btn.png" alt="">
+                <img id="btn-color-change" src="assets/theme-btn.png" alt="">
             </div>
         </nav>
     </header>
@@ -59,7 +66,10 @@
                     </div>
                     <div class="flex items-center gap-4 bg-slate-100 rounded-lg p-4">
                         <img src="assets/calender.png" alt="">
-                        <p class="font-semibold">wed, Jul 23 2025</p>
+                        <div id="date">
+                            
+                            
+                        </div>
                     </div>
                 </div>
 
@@ -161,11 +171,10 @@
             </div>
         </section>
     </main>
-    <aside>
-
-    </aside>
+    <script src="script/time.js"></script>
     <script src="script/calculate.js"></script>
     <script src="script/blog.js"></script>
+    <script src="script/rendomColor.js"></script>
     
 </body>
 
