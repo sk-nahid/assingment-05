@@ -10,6 +10,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            #history-log > p{
+                font-size: 20px;
+                padding:10px ;
+                background-color: aquamarine;
+                margin: 8px;
+                border: none;
+                border-radius: 10px;
+            }
+            .clear{
+                display: none;
+            }
+        </style>
 </head>
 
 <body class="">
@@ -22,7 +35,7 @@
             <div class="flex items-center gap-8 ">
                 <div class="flex gap-2 items-center bg-blue-100 px-4 py-2 rounded-4xl">
                     <i class="fa-solid fa-square-check text-2xl text-blue-500"></i>
-                    <p class="font-bold text-2xl ">23</p>
+                    <p id="completed-task" class="font-bold text-2xl ">23</p>
                 </div>
                 <img src="assets/theme-btn.png" alt="">
             </div>
@@ -37,10 +50,10 @@
                         <i class="fa-solid fa-square-check text-3xl text-blue-600 "></i>
                         <div>
                             <p>task assinged</p>
-                            <h4 class="text-3xl font-bold">06</h4>
+                            <h4 id="main-task" class="text-3xl font-bold">6</h4>
                         </div>
                     </div>
-                    <div class="flex items-center p-4 bg-gradient-to-br from-blue-500 to-blue-300 rounded-lg px-8">
+                    <div id="btn-blog" class="flex items-center p-4 bg-gradient-to-br from-blue-500 to-blue-300 rounded-lg px-8">
                         <img src="assets/board.png" alt="">
                         <h3 class="text-white text-3xl">Discover Something <br>New Today!</h3>
                     </div>
@@ -53,7 +66,7 @@
                 <div class="grid grid-cols-3 gap-8 my-4 rounded-lg  ">
                     <div class="bg-slate-100 px-4 py-8 rounded-lg">
                         <span class="bg-white px-4 py-2 rounded-md ">ShopEase</span>
-                        <h1 class="text-xl font-bold mt-4">Fix Mobile Button Issue </h1>
+                        <h1 id="title-1" class="text-xl font-bold mt-4">Fix Mobile Button Issue </h1>
                         <p class="bg-white p-4 my-4 rounded-lg">Debug using Chrome DevTools, check for overlapping </p>
                         <div class="flex items-center justify-between">
                             <div>
@@ -61,12 +74,12 @@
                                 <p class="text-slate-600">Deadline</p>
                                 <p class="font-bold">21 March 2025</p>
                             </div>
-                            <button class="btn btn-primary">Completed</button>
+                            <button id="btn-complate-1" class="btn btn-primary">Completed</button>
                         </div>
                     </div>
                     <div class="bg-slate-100 px-4 py-8 rounded-lg">
                         <span class="bg-white px-4 py-2 rounded-md ">CloudSync</span>
-                        <h1 class="text-xl font-bold mt-4">Add Dark Mode </h1>
+                        <h1 id="title-2" class="text-xl font-bold mt-4">Add Dark Mode </h1>
                         <p class="bg-white p-4 my-4 rounded-lg">Store the user's preference in localStorage, update CSS
                         </p>
                         <div class="flex items-center justify-between">
@@ -75,12 +88,12 @@
                                 <p class="text-slate-600">Deadline</p>
                                 <p class="font-bold">21 March 2025</p>
                             </div>
-                            <button class="btn btn-primary">Completed</button>
+                            <button id="btn-complate-2" class="btn btn-primary">Completed</button>
                         </div>
                     </div>
                     <div class="bg-slate-100 px-4 py-8 rounded-lg">
                         <span class="bg-white px-4 py-2 rounded-md ">SwiftPay</span>
-                        <h1 class="text-xl font-bold mt-4">Optimize Home page </h1>
+                        <h1 id="title-3" class="text-xl font-bold mt-4">Optimize Home page </h1>
                         <p class="bg-white p-4 my-4 rounded-lg">Debug using Chrome DevTools, check for overlapping </p>
                         <div class="flex items-center justify-between">
                             <div>
@@ -88,12 +101,12 @@
                                 <p class="text-slate-600">Deadline</p>
                                 <p class="font-bold">21 March 2025</p>
                             </div>
-                            <button class="btn btn-primary">Completed</button>
+                            <button id="btn-complate-3" class="btn btn-primary">Completed</button>
                         </div>
                     </div>
                     <div class="bg-slate-100 px-4 py-8 rounded-lg">
                         <span class="bg-white px-4 py-2 rounded-md ">Meta</span>
-                        <h1 class="text-xl font-bold mt-4">Add new emoji 🤲 </h1>
+                        <h1 id="title-4" class="text-xl font-bold mt-4">Add new emoji 🤲 </h1>
                         <p class="bg-white p-4 my-4 rounded-lg">Debug using Chrome DevTools, check for overlapping </p>
                         <div class="flex items-center justify-between">
                             <div>
@@ -101,12 +114,12 @@
                                 <p class="text-slate-600">Deadline</p>
                                 <p class="font-bold">21 March 2025</p>
                             </div>
-                            <button class="btn btn-primary">Completed</button>
+                            <button id="btn-complate-4" class="btn btn-primary">Completed</button>
                         </div>
                     </div>
                     <div class="bg-slate-100 px-4 py-8 rounded-lg">
                         <span class="bg-white px-4 py-2 rounded-md ">Google LLC</span>
-                        <h1 class="text-xl font-bold mt-4">Integrate OpenAI API </h1>
+                        <h1 id="title-5" class="text-xl font-bold mt-4">Integrate OpenAI API </h1>
                         <p class="bg-white p-4 my-4 rounded-lg">Debug using Chrome DevTools, check for overlapping </p>
                         <div class="flex items-center justify-between">
                             <div>
@@ -114,12 +127,12 @@
                                 <p class="text-slate-600">Deadline</p>
                                 <p class="font-bold">21 March 2025</p>
                             </div>
-                            <button class="btn btn-primary">Completed</button>
+                            <button id="btn-complate-5" class="btn btn-primary">Completed</button>
                         </div>
                     </div>
                     <div class="bg-slate-100 px-4 py-8 rounded-lg">
                         <span class="bg-white px-4 py-2 rounded-md ">Glassdoar</span>
-                        <h1 class="text-xl font-bold mt-4">Improve Job searching </h1>
+                        <h1 id="title-6"class="text-xl font-bold mt-4">Improve Job searching </h1>
                         <p class="bg-white p-4 my-4 rounded-lg">Debug using Chrome DevTools, check for overlapping </p>
                         <div class="flex items-center justify-between">
                             <div>
@@ -127,7 +140,7 @@
                                 <p class="text-slate-600">Deadline</p>
                                 <p class="font-bold">21 March 2025</p>
                             </div>
-                            <button class="btn btn-primary">Completed</button>
+                            <button id="btn-complate-6" class="btn btn-primary">Completed</button>
                         </div>
                     </div>
 
@@ -136,18 +149,24 @@
 
 
             </div>
-            <div class="bg-slate-50 rounded-lg">
+            <div id="history" class="bg-slate-50 rounded-lg">
                 <div class="flex gap-2 items-center my-4 justify-center">
                     <i class="fa-solid fa-clock-rotate-left"></i>
                     <p>Activity Log</p>
                 </div>
-                <div class="flex justify-center"><button class="btn btn-primary">Clear History</button></div>
+                <div id="clear-history" class="flex justify-center"><button class="btn btn-primary">Clear History</button></div>
+                <div id="history-log">
+
+                </div>
             </div>
         </section>
     </main>
     <aside>
 
     </aside>
+    <script src="script/calculate.js"></script>
+    <script src="script/blog.js"></script>
+    
 </body>
 
 </html>
