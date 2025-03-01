@@ -15,7 +15,7 @@ function setTextById(id, id2, id3, id4) {
     const complatedTask = getTextById(id3);
 
     if(task === 1){
-      alert('you have completed the task'); 
+      alert('you have completed all the task'); 
     }
     //math
     const sum = task - 1;
